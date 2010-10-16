@@ -47,7 +47,7 @@
       margin: 0;
     }
 
-    a, a:link, a:visited, a:active {
+    a:link, a:visited, a:active {
       color: {color:Links};
       text-decoration: underline;
     }
@@ -150,7 +150,8 @@
     }
 
 
-    #sidebar h1 a, #sidebar h1 a:visited {
+    #sidebar h1 a, 
+    #sidebar h1 a:visited {
       color: {color:Links};
       font-weight: normal;
       text-decoration: none;
@@ -195,7 +196,9 @@
       float:right;
       margin-left:4px;
     }
-    #nav li a{
+    #nav li a:link,
+    #nav li a:visited,
+    #nav li a:active {
       display:block;
       font-size:14px;
       color:#333333;
@@ -203,6 +206,9 @@
       padding:10px 12px 6px;
       border-bottom:1px solid #333333;
       background-color:#EEEEEE;
+    }
+    #nav li a:hover {
+      background-color:#DDD;
     }
 
 
