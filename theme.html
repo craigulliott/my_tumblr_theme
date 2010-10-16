@@ -223,14 +223,15 @@
 
     #footer_links {
       list-style:none outside none;
+      float:right;
     }
     #footer_links li {
-      float:left;
-      margin-right:23px;
+      float:right;
+      margin-left:23px;
     }
     #footer_links li a{
       color:#DDDDDD;
-      font-size:15px;
+      font-size:12px;
       text-decoration:none;     
     }
     #footer a {
@@ -461,6 +462,7 @@
       {block:HasPages}
         <ul id="nav">
           {block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}
+          <li><a href="/">Home</a></li>
         </ul>
       {/block:HasPages}
     
@@ -608,6 +610,7 @@
         {block:HasPages}
           <ul id="footer_links">
             {block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}
+            <li><a href="/">Home</a></li>
           </ul>
         {/block:HasPages}
       </div> <!-- end footer container -->
